@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="app.js"></script>
+    <title>My Website | Make yourself at home</title>
+</head>
+<body>
+  <!-- FIRST SECTION (INTRO SECTION) -->
+      <div class="main section" id="intro">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="list-item" data-text="Home">Home</li>
+          <li class="list-item" data-text="Projects">Projects</li>
+          <li class="list-item" data-text="About">About</li>
+          <li class="list-item" data-text="Contact">Contact</li>
+        </ul>
+      </nav>
+      <div class="desc">
+        <h1>T</h1>
+        <p>F</p>
+      </div>
+      <div class="btn-section">
+        <button class="btn-self__slide"><i class="fa fa-angle-down"></i></button>
+      </div>
+    </div>
+    <!-- SECOND SECTION (PROJECTS SECTION) -->
+    <div class="main__second" id="projects">
+      <div class="projects__self-item">
+        <div class="projects__desc">
+          <h2>Budget Control App</h2>
+          <p class="special-number" data-occurence="1">1</p>
+          <p>Track your Budget with this React.js App. Add your budget, then add your expenses. The app will tell you how much you have spent and substract that amount from your budget.</p>
+        </div>
+          <div class="image-container">
+            <a href="https://tayykayy.github.io/Budget-control/"><img src="./images/project-one.webp"></a>
+          </div>
+      </div>
+        <div class="projects__self-item">
+          <div data-on="true" class="image-container"><a href="https://tayykayy.github.io/to-do-list/"><img src="./images/project-two.webp"></a></div>
+          <div class="projects__desc">
+            <h2>To-do List App</h2>
+            <p class="special-number" data-occurence="2">2</p>
+            <p>Stay organized with this React.js App. Add a to-do, click on it when you complete it and it will be completed. This app also displays the count of the completed and uncompleted to-dos. You can also apply a filter to filter your to-dos.</p>
+          </div>
+          <div data-on="false" class="image-container"><a href="https://tayykayy.github.io/to-do-list/"><img src="./images/project-one.webp"></a></div>
+        </div>
+    </div>
+    <!-- THIRD SECTIOM (ABOUT ME SECTION) -->
+    <div class="main__third" id="about">
+      <div class="about__desc">
+        <h2 class="about__title-desc">About Me</h2>
+        <p>Hello World! I am Tony Khoury, a Front-End Developer. I am self taught, very ambitious, and eager to learn. I love implementing logic and passion into web designs to deliver the best user experience possible. I am constantly looking for new technologies and sharpening my skills!</p>
+        <div class="about__info">
+          <p class="age slider"></p>
+          <p class="location slider">Location: Lebanon</p>
+          <p class="freelance slider">Freelance: Available</p>
+        </div>
+      </div>
+      <div class="about__skills">
+        <h2 class="about__title-skills">My Skillset:</h2>
+        <div class="about__skills-info">
+          <p class="skill-item">HTML</p>
+          <p class="skill-item">CSS</p>
+          <p class="skill-item">JavaScript</p>
+          <p class="skill-item">React.js</p>
+          <p class="skill-item">Git</p>
+        </div>
+      </div>
+    </div>
+    <div class="main__fourth" id="contact">
+      <h2>Let's get in touch</h2>
+      <p>Do you have a design you want to bring to life? A project you want to discuss? A position you want to fill? Reach me out by phone, email, or on the socials and i will be happy to help!</p>
+      <div class="contact-icons">
+        <a class="icon-self" target="_blank" href="https://www.instagram.com/_tkhoury_/"><i class="fa fa-instagram"></i></a>
+        <a class="icon-self" target="_blank" href="https://www.linkedin.com/in/tony-khoury-32b912247/"><i class="fa fa-linkedin"></i></a>
+        <a class="icon-self" target="_blank" href="tel:81687112"><i class="fa fa-phone"></i></a>
+        <a class="icon-self" target="_blank" href="https://github.com/TaYYKaYY"><i class="fa fa-github"></i></a>
+        <a class="icon-self" target="_blank" href="mailto:tony14.k22@gmail.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+</body>
+</html>
