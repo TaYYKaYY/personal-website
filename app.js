@@ -24,7 +24,7 @@ let navbar = document.querySelector('.navbar')
 
 let iconSelf = document.querySelectorAll('.icon-self')
 
-let contact = document.querySelector('.contact')
+let contact = document.querySelector('#contact')
 
 const firstName = "Tony Khoury"
 
@@ -68,7 +68,7 @@ navList.addEventListener('click', e => {
     } else if (e.target.getAttribute('data-text').toLowerCase() === 'home'){
         window.scrollTo(0, 0)
     }else if (e.target.getAttribute('data-text').toLowerCase() === 'contact'){
-        contact.classList.toggle('contact-rise')
+        contact.scrollIntoView()
     }
 })
 slideBtn.addEventListener('click', () => {
