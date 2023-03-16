@@ -6,7 +6,7 @@ let projectsSection = document.querySelector('#projects')
 
 let aboutSection = document.querySelector('#about')
 
-let aboutInfo = document.querySelector('.about__info')
+let sliders = document.querySelectorAll('.slider')
 
 let aboutSkillsInfo = document.querySelectorAll('.skill-item')
 
@@ -104,6 +104,4 @@ iconSelf.forEach(icon => observer.observe(icon))
 aboutSkillsInfo.forEach(item => observer.observe(item))
 specialNumbers.forEach(number => observer.observe(number))
 imageContainers.forEach(container => observer.observe(container))
-for (let item in aboutInfo.children){
-    observer.observe(aboutInfo.children[item])
-}
+sliders.forEach(slider => observer.observe(slider))
