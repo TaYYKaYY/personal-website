@@ -117,7 +117,6 @@ inputs.forEach(input => {
         let behindInterval = setInterval(() => {
             let text = input.getAttribute('data-textBehind')
             formatted += text[index]
-            console.log(formatted)
             contactForm.setAttribute('data-behind', formatted.toUpperCase())
             index++
             if (index === text.length){
