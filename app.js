@@ -123,7 +123,6 @@ inputs.forEach(input => {
             if (index === text.length){
                 clearInterval(behindInterval)
             }
-        }, 50)
-        // contactForm.setAttribute('data-behind', input.getAttribute('data-textBehind').toUpperCase())
-    })
+        }, 80)
+})
 })
