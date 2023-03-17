@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="app.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
     <title>My Website | Make yourself at home</title>
 </head>
 <body>
@@ -80,6 +81,22 @@
     <div class="main__fourth" id="contact">
       <h2>Let's get in touch</h2>
       <p>Do you have a design you want to bring to life? A project you want to discuss? A position you want to fill? Reach me out by phone, email, or on the socials and i will be happy to help!</p>
+      <form class="contact-form" name="contact" netlify>
+        <div class="form-inpts">
+          <div>
+            <input class="main-inpt inpt" data-textBehind="name" type="text" placeholder="Enter your Name" required name="name">
+            <input class="main-inpt inpt" data-textBehind="e-mail" type="email" placeholder="Enter your E-Mail" required name="email">
+          </div>
+          <div>
+            <input class="main-inpt inpt" data-textBehind="phone" type="text" placeholder="Phone" name="Phone">
+            <input class="main-inpt inpt" data-textBehind="subject" type="text" placeholder="Subject" name="subject">
+            <div class="message-field">
+              <textarea class="message-inpt inpt" data-textBehind="message" name="message" placeholder="Message" cols="50" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+        <button class="send-btn">Send</button>
+      </form>
       <div class="contact-icons">
         <a class="icon-self" target="_blank" href="https://www.instagram.com/_tkhoury_/"><i class="fa fa-instagram"></i></a>
         <a class="icon-self" target="_blank" href="https://www.linkedin.com/in/tony-khoury-32b912247/"><i class="fa fa-linkedin"></i></a>

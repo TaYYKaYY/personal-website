@@ -22,9 +22,13 @@ let navList = document.querySelector('.nav-list')
 
 let navbar = document.querySelector('.navbar')
 
+let inputs = document.querySelectorAll('.inpt')
+
 let iconSelf = document.querySelectorAll('.icon-self')
 
 let contact = document.querySelector('#contact')
+
+let contactForm = document.querySelector('.contact-form')
 
 const firstName = "Tony Khoury"
 
@@ -105,3 +109,21 @@ aboutSkillsInfo.forEach(item => observer.observe(item))
 specialNumbers.forEach(number => observer.observe(number))
 imageContainers.forEach(container => observer.observe(container))
 sliders.forEach(slider => observer.observe(slider))
+
+inputs.forEach(input => {
+    input.addEventListener('focus', () => {
+        let index = 0
+        let formatted = '';
+        let behindInterval = setInterval(() => {
+            let text = input.getAttribute('data-textBehind')
+            formatted += text[index]
+            console.log(formatted)
+            contactForm.setAttribute('data-behind', formatted.toUpperCase())
+            index++
+            if (index === text.length){
+                clearInterval(behindInterval)
+            }
+        }, 50)
+        // contactForm.setAttribute('data-behind', input.getAttribute('data-textBehind').toUpperCase())
+    })
+})
