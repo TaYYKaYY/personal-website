@@ -131,7 +131,7 @@ img{
     box-shadow: 10px 10px #e57843;
     z-index: 2;
     transition: 1s;
-    transition-delay: 450ms;
+    transition-delay: 250ms;
 }
 .special-number{
     font-size: 15em;
