@@ -124,5 +124,5 @@ inputs.forEach(input => {
                 clearInterval(behindInterval)
             }
         }, 80)
-})
+    })
 })
