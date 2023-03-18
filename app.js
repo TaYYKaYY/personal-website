@@ -104,11 +104,15 @@ let observer = new IntersectionObserver(enteries => {
     })
 })
 
-iconSelf.forEach(icon => observer.observe(icon))
-aboutSkillsInfo.forEach(item => observer.observe(item))
-specialNumbers.forEach(number => observer.observe(number))
-imageContainers.forEach(container => observer.observe(container))
-sliders.forEach(slider => observer.observe(slider))
+function observeItems(item){
+    item.forEach(index => observer.observe(index))
+}
+
+observeItems(iconSelf)
+observeItems(aboutSkillsInfo)
+observeItems(specialNumbers)
+observeItems(imageContainers)
+observeItems(sliders)
 
 inputs.forEach(input => {
     input.addEventListener('focus', () => {
